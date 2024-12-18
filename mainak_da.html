@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahari - 2k24</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .BrandMarquee_track__v30pg {
+            display: flex;
+            gap: 32px;
+            width: max-content;
+            animation: BrandMarquee_marquee-scroll__Q6KhZ 150s linear infinite forwards;
+            padding: 20px auto;
+            background-color: #f0f0f0
+        }
+
+        .BrandMarquee_track__v30pg.BrandMarquee_fadeoutEdges___3HMT {
+            -webkit-mask-image: linear-gradient(90deg, transparent, #f0f0f0 32px, #f0f0f0 calc(100% - 32px), transparent);
+            mask-image: linear-gradient(90deg, transparent, #f0f0f0 32px, #f0f0f0 calc(100% - 32px), transparent)
+        }
+
+        .BrandMarquee_track__v30pg.BrandMarquee_fadeoutEdges___3HMT .BrandMarquee_item__AbiNT {
+            background-color: #f0f0f0;
+            font-size: 32px;
+            height: -moz-fit-content;
+            height: fit-content;
+            margin: 8px auto;
+            position: relative;
+            width: max-content;
+            background-image: linear-gradient(90.23deg, #4991e7 1.67%, #807bd2 42.39%, #d16669 83.11%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent
+        }
+
+        .BrandMarquee_track__v30pg.BrandMarquee_fadeoutEdges___3HMT .BrandMarquee_item__AbiNT span {
+            color: transparent
+        }
+
+        .BrandMarquee_track__v30pg.BrandMarquee_fadeoutEdges___3HMT .BrandMarquee_item__AbiNT span:before {
+            content: "•";
+            -webkit-text-fill-color: #4285f4;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: -32px;
+            width: 32px
+        }
+
+        @media(min-width: 768px)and (max-width:1024px)and (orientation:landscape) {
+            .BrandMarquee_track__v30pg.BrandMarquee_fadeoutEdges___3HMT .BrandMarquee_item__AbiNT {
+                font-size: 24px
+            }
+        }
+
+        @media(min-width: 481px)and (max-width:767px) {
+            .BrandMarquee_track__v30pg.BrandMarquee_fadeoutEdges___3HMT .BrandMarquee_item__AbiNT {
+                font-size: 20px
+            }
+        }
+
+        @media only screen and (max-width: 40em) {
+            .BrandMarquee_track__v30pg.BrandMarquee_fadeoutEdges___3HMT .BrandMarquee_item__AbiNT {
+                font-size: 20px
+            }
+        }
+
+        .BrandMarquee_track__v30pg.BrandMarquee_fadeoutEdges___3HMT.BrandMarquee_dark__NeFYH {
+            -webkit-mask-image: linear-gradient(90deg, transparent, #000 32px, #000 calc(100% - 32px), transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 32px, #000 calc(100% - 32px), transparent)
+        }
+        /* Navbar  */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #f1f1f1;
+            border-radius: 30px;
+            margin: 20px auto;
+            max-width: 70%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .logo span {
+            font-size: 14px;
+            font-weight: normal;
+            color: #555;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 2px 8px;
+            margin-left: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+            background-color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                max-width: 90%;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .nav-links {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: #f1f1f1;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links a {
+                margin: 16px 0;
+            }
+        }
+
+        /* Hero Section  */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left-section {
+            flex: 1;
+            padding-right: 40px;
+        }
+        .right-section {
+            flex: 1;
+            background-image: url('images/welcome.jpeg');
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .event-details {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .event-details > div {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .event-details img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        .register-btn {
+            background-color: #ffd600;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .devfest-logo {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .devfest-logo h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .location-badge {
+            background-color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .icons {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .year-badge {
+            background-color: #ffd600;
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .icons img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+        .event-images {
+            display: flex;
+            justify-content: space-between;
+        }
+        .event-images img {
+            width: 48%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-section, .right-section {
+                width: 100%;
+                padding: 0;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background-color: #fff; color: #333; line-height: 1.6;">
+
+    <nav class="navbar">
+        <div class="logo">
+            <h2>লহরী <span>2k24</span></h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#venue">Venue</a>
+            <a href="#">Projects</a>
+            <a href="#">Teams</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="left-section">
+            <h1>Welcome to<br>Lahari 2024</h1>
+            <p>Ignite Your Development Journey by Google Developer Group. Join a global community of developers for a day of inspiration, learning, and connection. Dive deep into the latest technologies, experiment with cutting-edge tools, and network with like-minded peers.</p>
+            <div class="event-details">
+                <div>
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E" alt="Calendar">
+                    19th-20th December
+                </div>
+                <div>
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'%3E%3C/path%3E%3Ccircle cx='12' cy='10' r='3'%3E%3C/circle%3E%3C/svg%3E" alt="Location">
+                    Mankar College
+                </div>
+            </div>
+            <a href="#" class="register-btn">REGISTER NOW</a>
+        </div>
+        <div class="right-section">
+            
+        </div>
+    </div>
+    
+
+
+    <!-- <div class="BrandMarquee_track__v30pg BrandMarquee_fadeoutEdges___3HMT">
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>DevFest Kolkata 2024</span></div>
+        <div class="BrandMarquee_item__AbiNT"><span>Google Developer Group</span></div>
+    </div> -->
+    <div style="
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+">
+        <h1 style="font-size: 36px; margin: 0;">
+            <span style="color: #28a745; font-size: 30px;">“</span>
+            <span style="color: #000; font-weight: bold;">লহরী 2024</span>
+            <span style="color: #28a745; font-size: 30px;">”</span>
+        </h1>
+        <p style="font-size: 16px; color: #333;">
+            <span
+                style="background: #e0f1ff; color: #0000ff; padding: 5px 10px; border-radius: 20px; font-weight: bold;">
+                Brings you
+            </span>
+            <span style="display: inline-block; transform: rotate(20deg); font-size: 20px; color: #aaa;">→</span>
+        </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 10px;">
+
+        <div
+            style="background: #d3f3ff; border-radius: 10px; width: 150px; padding: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center;">
+            <p style="margin: 0; font-size: 30px; font-weight: bold;">15+</p>
+            <p style="margin: 5px 0; font-size: 12px; color: #666; text-transform: uppercase;">Departments</p>
+        </div>
+
+        <div
+            style="background: #ffd8d8; border-radius: 10px; width: 150px; padding: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center;">
+            <p style="margin: 0; font-size: 30px; font-weight: bold;">10+</p>
+            <p style="margin: 5px 0; font-size: 12px; color: #666; text-transform: uppercase;">Stalls</p>
+        </div>
+
+        <div
+            style="background: #eeeeee; border-radius: 10px; width: 150px; padding: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center;">
+            <p style="margin: 0; font-size: 30px; font-weight: bold;">2</p>
+            <p style="margin: 5px 0; font-size: 12px; color: #666; text-transform: uppercase;">Day</p>
+        </div>
+
+        <div
+            style="background: #ffecb3; border-radius: 10px; width: 150px; padding: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center;">
+            <p style="margin: 0; font-size: 30px; font-weight: bold;">8+</p>
+            <p style="margin: 5px 0; font-size: 12px; color: #666; text-transform: uppercase;">Activities</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 20px;" id="venue">
+        <h2 style="font-size: 28px; margin-bottom: 10px;">
+            <span style="color: #48a05c;">{</span>
+            <span style="color: #000; font-weight: bold;">Venue</span>
+            <span style="color: #48a05c;">}</span>
+        </h2>
+        <div style="display: inline-block; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="images/college-1.jpg" alt="Venue Image" style="width: 100%; max-width: 800px; height: auto;">
+        </div>
+        <p style="margin: 15px 0; font-size: 14px; color: #666;">
+            📍 Mankar College Ground, Mankar &nbsp; | &nbsp; 🗓 19th & 20th December, 2024
+        </p>
+    </div>
+
+    <div style="max-width: 900px; margin: 20px auto; padding: 20px; box-sizing: border-box;" id="faq">
+        <h2 style="font-size: 28px; color: #000; margin-bottom: 5px;">Frequently Asked Questions</h2>
+        <p style="color: #999; margin-bottom: 20px;">Need Answers? Find them here.</p>
+
+        <div style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+
+            <div style="border-bottom: 1px solid #ddd; padding: 15px; display: flex; justify-content: space-between; cursor: pointer;"
+                onclick="toggleAnswer(2)">
+                <p style="margin: 0; font-weight: bold;">What is Lahari?</p>
+                <span style="font-size: 20px; font-weight: bold;" id="icon-2">+</span>
+            </div>
+            <div id="answer-2" style="display: none; padding: 0 15px 15px; color: #666;">
+                Lahari (লহরী) is the annual fest (social) and stall exhibition of Mankar College.
+            </div>
+
+            <div style="border-bottom: 1px solid #ddd; padding: 15px; display: flex; justify-content: space-between; cursor: pointer;"
+                onclick="toggleAnswer(3)">
+                <p style="margin: 0; font-weight: bold;">Who can attend Lahari?</p>
+                <span style="font-size: 20px; font-weight: bold;" id="icon-3">+</span>
+            </div>
+            <div id="answer-3" style="display: none; padding: 0 15px 15px; color: #666;">
+                Anyone interested in technology, development, and community-building can attend Lahari.
+            </div>
+
+            <div style="border-bottom: 1px solid #ddd; padding: 15px; display: flex; justify-content: space-between; cursor: pointer;"
+                onclick="toggleAnswer(4)">
+                <p style="margin: 0; font-weight: bold;">What is unique about Lahari?</p>
+                <span style="font-size: 20px; font-weight: bold;" id="icon-4">+</span>
+            </div>
+            <div id="answer-4" style="display: none; padding: 0 15px 15px; color: #666;">
+                Lahari stall exhibitions provides hands-on learning, networking opportunities, with technology experts.
+            </div>
+
+            <div style="padding: 15px; display: flex; justify-content: space-between; cursor: pointer;"
+                onclick="toggleAnswer(5)">
+                <p style="margin: 0; font-weight: bold;">How can I stay informed?</p>
+                <span style="font-size: 20px; font-weight: bold;" id="icon-5">+</span>
+            </div>
+            <div id="answer-5" style="display: none; padding: 0 15px 15px; color: #666;">
+                You can stay informed by following Mankar College - Comp Sc. dept's social media channels and
+                subscribing to their newsletter.
+            </div>
+
+        </div>
+    </div>
+
+    <section style="padding: 30px 15px; max-width: 1100px; margin: 0 auto;">
+        <h1 style="font-size: 2rem; margin-bottom: 10px;">What to Expect</h1>
+        <p style="font-size: 1rem; color: #666; margin-bottom: 20px;">
+            An annual event hosted by the Google Developers Group across the world to bring the technology closer to
+            developers. It is an all-day developer conference where we aim to focus on multiple technologies through
+            lightning talks, sessions, workshops, etc.
+        </p>
+
+        <div style="display: flex; justify-content: space-between; gap: 20px;">
+            <div
+                style="flex: 1; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8; position: relative; text-align: left;">
+                <div
+                    style="content: ''; position: absolute; width: 50px; height: 50px; top: -15px; left: -15px; background-color: #ff6f61; border-radius: 10px; z-index: -1;">
+                </div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Networking Opportunities</h3>
+                <p style="color: #555; font-size: 0.95rem;">Connect with like-minded developers, industry leaders, and
+                    Google experts to expand your professional network and collaborate on projects.</p>
+            </div>
+
+            <div
+                style="flex: 1; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8; position: relative; text-align: left;">
+                <div
+                    style="content: ''; position: absolute; width: 50px; height: 50px; top: -15px; left: -15px; background-color: #4285F4; border-radius: 10px; z-index: -1;">
+                </div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Career Guidance</h3>
+                <p style="color: #555; font-size: 0.95rem;">Get advice from industry professionals and Google experts on
+                    how to advance your career in tech, including resume reviews, interview tips, and career paths.</p>
+            </div>
+
+            <div
+                style="flex: 1; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #f8f8f8; position: relative; text-align: left;">
+                <div
+                    style="content: ''; position: absolute; width: 50px; height: 50px; top: -15px; left: -15px; background-color: #34A853; border-radius: 10px; z-index: -1;">
+                </div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Community Engagement</h3>
+                <p style="color: #555; font-size: 0.95rem;">Engage with the vibrant Google Developer Groups community,
+                    participate in interactive sessions, and explore ways to contribute to open-source projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section
+        style="background-color: #fff; border: 2px solid #333; border-radius: 20px; margin: 40px auto; padding: 20px; max-width: 900px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="max-width: 600px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 10px; color: #000;">Keep in touch for latest announcements!
+            </h2>
+            <p style="color: #555; font-size: 1rem;">Let's get connected so that we can reach out to each other via
+                socials. Stack out <strong style="color: #333;">@deptcompscmnk</strong> for updates and news.</p>
+            <div style="display: flex; gap: 10px; margin-top: 15px;">
+                <a href=""><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABCVJREFUSEutlk2IllUUx38nTUETFIrU8SMkk4IcZ7KNMiXpzpEJEWyRVoot3KWiICqNEgY55CZoYY0fuHAxKeq4MRB1wHAcHSQpQheRJoJQ5OROT/fc577Pc5+v93XRheF95rn3Of9z/ud/zj3C/7kE0LzB7FV+0/5rscofaAWAN9IUOMCEM1I62/pFJUAr94sf1UZcwJ8BvAqMqwMI558At4H7uXONKNNMiCenIin+5HSEr1BZKei0QupaBfgXMAiyHTTvRMhJXcQrgRPAZKNI0H8VboA88erxfsWc+DO2MwGkE3Ri8GwMWAucK8VXsgGTgDvAdKAf5FtBRxSMxmdZ44EuJ7VekC7QP4H5wOPs42qqe1H2hIg/aKmkspLXCYjCUeCCwDLHUa8D/TxWfhXVd0HaQo4fpMw2jTVFXwccDSx+glp6GAXuAbNidiPgIKhEkb+6iF9PsGJJ+uc2hB6UJV6kwhWUk0HJ60GOhHxvAOkX9JHCC8BLwMOGPhLgjK5OhBFUhgTtyik5OfMpcACYUiDgH+Az4Hvg42DxZ2BY4I6jfR7wJmDvUsjYhoniEsggaHcuWNgKcgDUQA4C14HnERaiHtSisl/bi9fNBFSWgF5pwEady4e0AuE8KidBV0fedSgMgzwEfSvkLDIuc0DNEWOiU+BWgy2BURXaUboEhqL3cfC6AjjvPBxwtKyJLO9F2I2yBfi6Rmc7gC+BXY6JL6Iz1xE6UN4BLqcsFqphOcKPacTZ5hmgO/wN5kSXIRhDAyADoLHTI8YCsAy4mFIdex9q7gJwFlgV7Z0KSu4ROF3TPlNgQddElA4rLHbaec/qugLYh2de2eZpoCcC3uM6pzWWbS6PfWWq/bc7A8X2uz86cw0wXbwrcKkuxw3gswKronY8O6lteQy6qCwu5jpHbyCMR1ngazor/1GF9tBGh1JFZd3EPy0FbHNQoLtA6WbXBL4BxhAOolgkE0iMWhlZj9/kOtShgs1bwBuuRN8W9FoacaYf/9QR6nNIIN9AkrLfBNqHMCUdcRIDVttbEL4rttiogbQL3EyAy5fELOAPkN9BX8mpNwujzfXf90GWgtqN9RPID/7ezd+U5tBz4Vaya3K2wN26HNuE8XfoQjMbk0TF9Vsa6qprWxYLaqoeA5nqHW3kvuwkh1zUG90detyNMR/mL4kK8xUGolNWISbYfmBDoXRLxl4EfgOmhclhH3AVePpsYyTJICDsQzGx2hj0mr+Z0iWUp8wk+R+5HB+Omml+9EkF4sedePnRR9CJ0fv1wLGmU2ahfVpvtd5sHcxEEuBap1fgqetW1v36fNMopaP5lNnAetkPBXW5jOeELPZfgAfVggsBVNureFugo2g07gdhAolTWqCpKsclgDrEdKQtBdbCxyRlTT1txlXtXnCoRQD/AcO1aTk8RcVdAAAAAElFTkSuQmCC" /></a>
+                <a href=""><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA2NJREFUSEudlk2ITmEUx3+nmZDG+NggCzQpIiuLSaQssPSRLFBkRUQaiY0d8lEoS6kpmqahhMzGRsoIpYRsxlcNmoSQyPR4n3ufe+/zce5t8i7e3vfe85yP//9/znmEpo8AJvtyVu638igz8O2Ts34gyUzDA3WJ+MESm/BlY0yvhNLNOA60Ad3APGC2OzgC8lYwQ0YYs+AkOSrI5RWHQGo1LwCOABsEpgXAV1G+ANdAToAZbqTQgVyGFUxIKUwGTgJ7ENrKahph5y9wpiWMY8AfnZWCYz29uQi3MbK4Elc9NEouj4D1wEiBfazJsOL83yLgPjAj1F6dnGsJGwGWA28t8xmiqbjKVpmFYUhgbmHUIPRPBu4BrwV+GWgHNgELvTMvXPBvVQflAgw/Qh+GLboyg8r6BLPbwNfIw74WUheiZxdB9lYaCjjOQtlMX8aZZByHs8NWsRQYU9DYD5wLhkkusnkCH0qoo8p6EbbHvagIx8J53YfO9bbt742Arbr65A5Oteg4rHDMBGAUoTMMrIzJnMNXnusBx20xBsMpkg+QYTBdxRmf49XAXSVTTVudwHf3wib8u6peTbTwUSbsBZYdYC6nUdQWmgL8cLYdXhJJ/Mif7esbRYsW7w4Bp+pax4fIQGNgpVOKGXQAOB8H7gFO54eSbfPGCPPjeZroJz/WD2xO/WQDpKeV9NkosGwH01sbGOanKSU5WpNnwBLND7AVuBoH7gbzoDjgjzdgGKFrHEvCrs2fwMQaypYhPCn8OBtpB2NXW4fSC3Y6ldwY4Tim3DxW1UcdOVNADiZLJafvKxg7+7NWlorN7JfXj1HO4TLPxOXOJqquqfYKsM0XqV/gMsCuM09eal/+j6ot78/DwAXYOQ53QNbpcJW1WEh/OJuGisukBzBO6V4dMTKzALsEpke96+OQVKxcq4rcP7r9nm+xIHC6BVYJDBqYVMNXwrG+RuU7GDuKH5d+aiuuPKwAboFMVWCPKs4CxL5HgTWt689TLXlP1cprYQ5G+sHY60sEtc9xGBi4ibATw+fEawPHlW1uZL9XAruAtcBM9Fn9vnXnHgQuAQ9rJleASpiUU0k0ufz+sqPzHciYg9dOK5uMvdhpza/4DwaICnVEb+OuDZsypKb61ywu5bKjPKpR/Lge/wP4IjAyNpOSkwAAAABJRU5ErkJggg==" /></a>
+                <a href=""><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwZJREFUSEuVl7FrFFEQxn8DFkGwULARLHJiY6mgFipewMrSThAECyVBSJHjBJGIhYSk0EJy/gGCnTY2opJDO8FgZ2GSSi1VMIU2ed7uvts38/a93Gab23s7733zzTczOyuoSwCnFxL3OZuwri38fWJTsWSvXdHbuJanEruU5FgatcaxhultTZsU8HXgMPAOZF1weQn25qHHEpqhhg/AueCNXAP3bIL0zccJqWMRai/A3QSeRqJ/AXciC9xgXLAZR8jfZ5MrbF4cxeB+HddqwzZwwAA3Dspnbzp5m6E+D7ynVMCNf54LXN29zFpnYTg6seUWcEfgiIOXwA1gu/Ilx6wdcKacJmTDhGbS2N3wMVVOOc3apLLdewg4DnwHvhXbc7GIy2ka2LLmsiq4Oa/xArAy9scfehC4MBJiETip9v4Bee0r5WeqQepy8sDGbBWY8ysp4Hngcfk8HbkN4DTwK9syBaadsGXblGUssBJl+F9gaoJad4GH2rkWoUYxlgVwKwnhdgQ2Hfwowi4gkXPrwKls5xKcZ2yCUmlcLZlQ+4MKxkWL/eT/XwTeAPsU0A6wH/in80NrsweN63p5guN2FOpXwOUooYps39C9ST+vgdVBJrkSGl8BXkQgj4D5KNvOAB8t45DX064sJ6OGCrXXWNcBXBqF+m0EfA/hge350gU3HHdAlVwlxw6wGQEPwM36td5Iq2XTPmEGWNMdFeiPMn0pOqcruOE46bLAKtQDoAYWWI4mkxI4YtxHWIqmhy4wTCaXQMd5xjngkrG9GowF+q7BmBxwLtQYxgG4di0wDt5OZhy1sZqxIjUQmPXa9MpQ2+RKhzqhcZlcaq8OXAdhM9JGMZae4Gpg3wJncF5jzbgE1mMQXYGhfqXrgcNqXB2UCXXt7wzIWjlnhXew19jEsyonwzjUwhTC2TD1lFbFu/Wrtz8KHIuS6/OoWfyO1ibYpcfb6Aw9SjTGiqhUM18BiWkgfjtFoNXfEJDcPGGzzfS9+nvMpnEF3IaIN9Qzc/jEs/Nz2j0buf+mSzA0EQ7R8QAAAABJRU5ErkJggg==" /></a>
+                <a href=""><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAsVJREFUSEullz+MDVEUxn8nK5EIodhGNEJ2O9tsJwoNkRWUShFBIiESNGTfylqrsIWNZgtRKFUrEUKiEK1EBBERKoUodFaBHG/mzn1z5/6ZO8MU7827f853v3O+c859IoCWHzhPMOBORt4FQZsmIuZcrOI9+nSB7rKmzf5oLk88DVXPRNYkhvq7MUO19RAlWhEa8x0E2t0cj9//ONpARoEzbqi3VQv7HiMmrnXAIWA38KOyOw5MgKyv5e9Cjd7XgLcCayZTREFfAw9Bfrt7HcYlxBTwANieZ5wSUTXufgmfUQ4D76xdn/ELYE8WNErWhqyKXGjkCXAgBrwN+GKE1tyVwqlXpSLcZA9sBb56qmbfMK5PjbEuUumS066lcv1e4LlFsAc/DtxtcA0OXM4WGtgB7HIzorVk1kaPAvdrYANwAVgKQxMwGyBcRzkhsKjC+Cg0kZh4u08Cd3zGV4fwc7aYpIqGoAOFa9UBtyDMo5wBxjp46xzC7aIrOaqWJdCCdfB4hW0wBLHAtvhMgi67qo0dYlgXLlmvilMaFwS94gk6liOzwIJ3ugngFjCTScXLwI3A1QJzubYsMKs18CZgHuSsoGNhX3ePUVI8Dyz76XRR4GaHS0HBeBE4VbrcFVeAEyTmsWFG3PMYy2lBV5KurnNnFWEnWqVTyrfxQjSjwuMiC5wYcwRYzcSoQ2lpInoZNqXwpna1QZsEPuSAWwkGLIO72AbgpwdcLnqpMG0m8pc3t3KVBd7Lu+Yh5RHoQTPWzONCddPAM2DzPzFPA3+qevx7aze8CAgbUdkv6Hc1l4GiJhddpc/zDeEjKr9AX5mLAH980fcxaD0VtM4gk1Lsq3GjavvDj2trd+zRuCP2Q1fXimlmf9B5ImmTvzFUjmmIazTW8e9MD+Cgr3vAec+2roheXIJQj9zuSytSBFqV5IYmFaaIM/8CL5X7K7XXqasAAAAASUVORK5CYII=" /></a>
+                <a href=""><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwdJREFUSEudlk2IjlEUx38ns9A0ja9CMURpUmKBzfiIEWnKQiQLRcpCIUVZiIXFKCUhk60N46tZSTZqWEhsZMmGkqZmM6nBmLree5/nfZ5773Pu87zceut578e55/zP//zPFewQwLivcKTm812V5dr9/qIg4V8wDYcFE/pYa0BI7bfH0hH78SsOVe6s7E/v8CLOvXN7a00qOfn3qY6gTuVSz0o4m6RPJcAKcRoYBvOAEYEBA33AL4EbBq6CTOc5XpJndKLN4SzH5egG7gLHBWYDouseLgNeA6sUsL8BD4B1CL0YtsQU8Ml1AOEJRsbAHAJmY+5F8T9DGIpLMfLxE7AX6BMYz4Jpl1Np7TRwK/fsLXCk9fucyPEmgXc+dFVOupNfEJZi2A88b0cdl9N2YNyD4DdwGbgN/IzgPAPcDOZyD6OIJ/MAXtRBPRf4AdIVSdk08BS4D3xA+I6RS4K5ogle5OC1ltMXNFEsAswdPgky4tjoRxCenALsb4VWwVFqLiIMW2O+inmsdtuPAeuBDcCgpuGl0YYyK5etzXsaSX2n9wBBLmI4GlS01N/y4gHgjQ51OdtlWQyy0uVYkc/mJhFIv03HAq33xQJiXdjWgnpMYFFRc2pHalQ0a+uhwOEqAbW2mEVvFekcwgmM9JQMD5uHT8AStICRO7Ly9Ia3HLbFbOEUcBDYCPTU5jXN/Pcgm/UXRnZlMbx41gIfgTnxoi7Z6u27QF7WPwRy66VR97UPGAXprhzWijesl+sI5wt+uv0hJ4KHQMnkwvJicLDvRNha9y7zzL4CdgMzGpTtuQTUhZleRzI4C9jvpjEKHBWYSUppQK7M3EKnWEIfRvrB9CMMYlwdKiOAztarlcY7da/FsCZC+C2Th0HW+AISa6wXzR/gUY7KhA9jWwM6YHUQwSAwlL8slgOrgfmtfNsWN4nwFcMY8Bhhqsh9SlN80itQN+WvFvEYxs4iTotArTOVAPUiTzLk/yKtJlRpKuFUlVxKgTdrRCcwRaLhtSmtO0Uq00kXUvY0HPsLFv4bMcEjjqUAAAAASUVORK5CYII=" /></a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #333; color: #fff; padding: 20px 15px; text-align: center;">
+        <p style="margin-bottom: 10px;">© dept. of computer science -- mankar college <br><small>developed by mainak
+                majumder & team</small></p>
+        <nav>
+            <a href="#home" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">About LAHARI
+                2k24</a>
+            <a href="#faq" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">FAQ</a>
+            <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Code of
+                Conduct</a>
+            <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Community
+                Guidelines</a>
+        </nav>
+    </footer>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById('answer-' + id);
+            var icon = document.getElementById('icon-' + id);
+
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                icon.textContent = '-';
+            } else {
+                answer.style.display = 'none';
+                icon.textContent = '+';
+            }
+        }
+
+
+        // Navbar 
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+        }));
+    </script>
+
+</body>
+
+</html>

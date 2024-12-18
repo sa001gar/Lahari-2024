@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+ /* Navbar  */
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    margin: 20px auto;
+    max-width: 70%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 2px 8px;
+    margin-left: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #666;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        max-width: 90%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links a {
+        margin: 16px 0;
+    }
+}
+
+
+/* Hero Section  */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section {
+    flex: 1;
+    padding-right: 40px;
+}
+.right-section {
+    flex: 1;
+    background-image: url('images/welcome.jpeg');
+    width:100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+.event-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.event-details > div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.event-details img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.register-btn {
+    background-color: #ffd600;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+.devfest-logo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.devfest-logo h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.location-badge {
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.year-badge {
+    background-color: #ffd600;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.icons img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.event-images {
+    display: flex;
+    justify-content: space-between;
+}
+.event-images img {
+    width: 48%;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* AFter Hero  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.header p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.brings-you {
+    background: #e0f1ff;
+    color: #0000ff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+.arrow {
+    display: inline-block;
+    transform: rotate(20deg);
+    font-size: 1.25rem;
+    color: #aaa;
+    margin-left: 10px;
+}
+.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.stat-item {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.stat-item:nth-child(1) { background: #d3f3ff; }
+.stat-item:nth-child(2) { background: #ffd8d8; }
+.stat-item:nth-child(3) { background: #eeeeee; }
+.stat-item:nth-child(4) { background: #ffecb3; }
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.stat-label {
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    .header p {
+        font-size: 0.9rem;
+    }
+    .brings-you {
+        font-size: 0.9rem;
+    }
+    .arrow {
+        font-size: 1rem;
+    }
+    .stat-item {
+        min-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.75rem;
+    }
+    .stat-item {
+        min-width: 100%;
+    }
+}
+
+/* Venue Section  */
+/* Base styles */
+#venue {
+    text-align: center;
+    padding: 20px;
+}
+
+#venue h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#venue div {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+}
+
+#venue img {
+    width: 100%;
+    height: auto;
+}
+
+#venue p {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #venue h2 {
+        font-size: 24px;
+    }
+
+    #venue p {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    #venue div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #venue h2 {
+        font-size: 20px;
+    }
+
+    #venue p {
+        font-size: 12px;
+    }
+}
+
+
+/* FAQ Section  */
+/* What to expect Scetion  */
+@media (max-width: 768px) {
+    section div {
+        flex: 1 1 100%;
+    }
+
+    section h1 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section div {
+        padding: 15px;
+    }
+
+    section h1 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer nav a {
+        margin: 5px 0;
+    }
+}
