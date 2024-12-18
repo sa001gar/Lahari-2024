@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Section</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-details {
+            padding: 20px;
+        }
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            margin-bottom: 20px;
+        }
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .team-member {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .team-member img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 90%;
+        }
+        .close {
+            float: right;
+            cursor: pointer;
+        }
+        .member-details {
+            text-align: center;
+        }
+        .member-details img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            margin: 0 5px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="projects">
+            <!-- Projects will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="member-details">
+                <!-- Member details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const projects = [
+            {
+                title: "Project 1",
+                image: "https://via.placeholder.com/300x200",
+                description: "This is a description of Project 1.",
+                members: [
+                    { name: "Member 1", image: "https://via.placeholder.com/50", contribution: "Frontend Developer", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 2", image: "https://via.placeholder.com/50", contribution: "Backend Developer", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 3", image: "https://via.placeholder.com/50", contribution: "UI/UX Designer", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 4", image: "https://via.placeholder.com/50", contribution: "Project Manager", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 5", image: "https://via.placeholder.com/50", contribution: "QA Tester", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 6", image: "https://via.placeholder.com/50", contribution: "DevOps Engineer", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 7", image: "https://via.placeholder.com/50", contribution: "Data Scientist", social: { linkedin: "#", github: "#", twitter: "#" } }
+                ]
+            },
+            // Add 5 more project objects here with similar structure
+        ];
+
+        function createProjectElement(project) {
+            const projectElement = document.createElement('div');
+            projectElement.className = 'project';
+            projectElement.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <div class="project-details">
+                    <h2 class="project-title">${project.title}</h2>
+                    <p class="project-description">${project.description}</p>
+                    <div class="team-members">
+                        ${project.members.map(member => `
+                            <div class="team-member" data-name="${member.name}" data-image="${member.image}" data-contribution="${member.contribution}" data-social='${JSON.stringify(member.social)}'>
+                                <img src="${member.image}" alt="${member.name}">
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            return projectElement;
+        }
+
+        const projectsContainer = document.querySelector('.projects');
+        projects.forEach(project => {
+            projectsContainer.appendChild(createProjectElement(project));
+        });
+
+        const popup = document.querySelector('.popup');
+        const popupContent = document.querySelector('.popup-content');
+        const closeBtn = document.querySelector('.close');
+
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.team-member')) {
+                const member = e.target.closest('.team-member');
+                const memberDetails = member.dataset;
+                const socialLinks = JSON.parse(memberDetails.social);
+
+                popupContent.querySelector('.member-details').innerHTML = `
+                    <img src="${memberDetails.image}" alt="${memberDetails.name}">
+                    <h2>${memberDetails.name}</h2>
+                    <p>${memberDetails.contribution}</p>
+                    <div class="social-links">
+                        <a href="${socialLinks.linkedin}" target="_blank">LinkedIn</a>
+                        <a href="${socialLinks.github}" target="_blank">GitHub</a>
+                        <a href="${socialLinks.twitter}" target="_blank">Twitter</a>
+                    </div>
+                `;
+                popup.style.display = 'flex';
+            }
+        });
+
+        closeBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(e) {
+            if (e.target == popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -6,6 +6,16 @@
     <title>লহরী 2k24</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Font Awesome for Social Media Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -48,6 +58,25 @@
         <div class="right-section"></div>
     </section>
 
+
+    <div style="
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+">
+        <h1 style="font-size: 36px; margin: 0;">
+            <span style="color: #28a745; font-size: 30px;">“</span>
+            <span style="color: #000; font-weight: bold;">লহরী 2024</span>
+            <span style="color: #28a745; font-size: 30px;">”</span>
+        </h1>
+        <p style="font-size: 16px; color: #333;">
+            <span
+                style="background: #e0f1ff; color: #5252eb; padding: 5px 10px; border-radius: 20px; font-weight: bold;">
+                Brings you
+            </span>
+            <span style="display: inline-block; transform: rotate(20deg); font-size: 20px; color: #aaa;">→</span>
+        </p>
+    </div>
     <!-- Stats Section -->
     <div class="container stats-container">
         <div class="stat-item">
@@ -68,6 +97,23 @@
         </div>
     </div>
 
+<!-- Project Section  -->
+    <div class="container">
+        <div class="projects">
+            <!-- Projects will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="member-details">
+                <!-- Member details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    
+
 
     <div id="venue" style="text-align: center; padding: 20px;">
         <h2 style="font-size: 28px; margin-bottom: 10px;">
@@ -86,7 +132,7 @@
                 style="width: 100%; height: auto;">
         </div>
         <p style="margin: 15px 0; font-size: 14px; color: #666;">
-            📍 Mankar College Ground, Mankar &nbsp; | &nbsp; 🗓 19th & 20th December, 2024
+            <i class="fa-solid fa-location-dot" style="color: #ebb800;"></i> &nbsp;Mankar College Ground, Mankar &nbsp; | &nbsp; <i class="fa-regular fa-calendar-days" style="color: #1799fd;"></i> 19th & 20th December, 2024
         </p>
     </div>
 
@@ -104,7 +150,7 @@
                 <span style="font-size: 20px; font-weight: bold;" id="icon-2">+</span>
             </div>
             <div id="answer-2" style="display: none; padding: 0 15px 15px; color: #666;">
-                Lahari (লহরী) is the annual fest (social) and stall exhibition of Mankar College.
+                The annual fest and stall exhibition of Mankar College, Lahari (লহরী), is a vibrant celebration of culture, creativity, and community. This highly anticipated event brings together students, faculty, and visitors to showcase talent, innovation, and entrepreneurial spirit through a variety of cultural programs, stalls, and exhibitions. It serves as a platform to experience the college's rich traditions while fostering a sense of togetherness and festive enthusiasm.
             </div>
     
             <div style="border-bottom: 1px solid #ddd; padding: 15px; display: flex; justify-content: space-between; align-items: center; cursor: pointer;"
@@ -113,16 +159,16 @@
                 <span style="font-size: 20px; font-weight: bold;" id="icon-3">+</span>
             </div>
             <div id="answer-3" style="display: none; padding: 0 15px 15px; color: #666;">
-                Anyone interested in technology, development, and community-building can attend Lahari.
+                Lahari warmly welcomes anyone with a passion for technology, innovation, development, and community-building to immerse themselves in an exciting blend of creativity, collaboration, and cultural celebration, making it an ideal platform to connect with like-minded individuals, exchange ideas, and explore opportunities for growth and learning in a vibrant and dynamic environment.
             </div>
     
             <div style="border-bottom: 1px solid #ddd; padding: 15px; display: flex; justify-content: space-between; align-items: center; cursor: pointer;"
                 onclick="toggleAnswer(4)">
-                <p style="margin: 0; font-weight: bold; flex: 1;">What is unique about Lahari?</p>
+                <p style="margin: 0; font-weight: bold; flex: 1;">What makes Lahari unique?</p>
                 <span style="font-size: 20px; font-weight: bold;" id="icon-4">+</span>
             </div>
             <div id="answer-4" style="display: none; padding: 0 15px 15px; color: #666;">
-                Lahari stall exhibitions provide hands-on learning, networking opportunities, with technology experts.
+                Lahari’s stall exhibitions stand out as a hub of innovation and interaction, offering hands-on learning experiences and the chance to engage directly with technology experts. Whether you’re a tech enthusiast, a budding developer, or simply curious, Lahari creates a unique platform for networking, skill-building, and exploring cutting-edge ideas in an energetic and collaborative atmosphere.
             </div>
     
             <div style="padding: 15px; display: flex; justify-content: space-between; align-items: center; cursor: pointer;"
@@ -131,7 +177,7 @@
                 <span style="font-size: 20px; font-weight: bold;" id="icon-5">+</span>
             </div>
             <div id="answer-5" style="display: none; padding: 0 15px 15px; color: #666;">
-                You can stay informed by following Mankar College - Comp Sc. dept's social media channels and subscribing to their newsletter.
+                Stay up-to-date with all the latest news and updates about Lahari by following the official social media channels of Mankar College's Computer Science Department. For exclusive insights, event schedules, and behind-the-scenes content, subscribe to their newsletter and never miss an opportunity to be part of the excitement!
             </div>
     
         </div>
@@ -183,57 +229,124 @@
 
     <!-- Footer  -->
     <section
-    style="background-color: #fff; border: 2px solid #333; border-radius: 20px; margin: 40px auto; padding: 20px; max-width: 900px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-    <div style="max-width: 600px; margin-bottom: 20px;">
-        <h2 style="font-size: 1.8rem; margin-bottom: 10px; color: #000;">Keep in touch for the latest announcements!</h2>
-        <p style="color: #555; font-size: 1rem;">Let's get connected so that we can reach out to each other via socials. Follow us <strong style="color: #333;">@deptcompscmnk</strong> for updates and news.</p>
-    </div>
-    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-            <img src="facebook-icon.svg" alt="Facebook" style="width: 40px; height: 40px;">
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-            <img src="twitter-icon.svg" alt="Twitter" style="width: 40px; height: 40px;">
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-            <img src="images/" alt="Instagram" style="width: 40px; height: 40px;">
-        </a>
+    style="background-color: #fff; border: 2px solid #333; border-radius: 20px; margin: 40px auto; padding: 20px; max-width: 900px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="max-width: 600px;">
+        <h2 style="font-size: 1.8rem; margin-bottom: 10px; color: #000;">Keep in touch for latest announcements!
+        </h2>
+        <p style="color: #555; font-size: 1rem;">Let's get connected so that we can reach out to each other via
+            socials. Stack out <strong style="color: #333;">@deptcompscmankar</strong> for updates and news.</p>
+        <div style="display: flex; gap: 10px; margin-top: 15px;">
+            <a href=""><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABCVJREFUSEutlk2IllUUx38nTUETFIrU8SMkk4IcZ7KNMiXpzpEJEWyRVoot3KWiICqNEgY55CZoYY0fuHAxKeq4MRB1wHAcHSQpQheRJoJQ5OROT/fc577Pc5+v93XRheF95rn3Of9z/ud/zj3C/7kE0LzB7FV+0/5rscofaAWAN9IUOMCEM1I62/pFJUAr94sf1UZcwJ8BvAqMqwMI558At4H7uXONKNNMiCenIin+5HSEr1BZKei0QupaBfgXMAiyHTTvRMhJXcQrgRPAZKNI0H8VboA88erxfsWc+DO2MwGkE3Ri8GwMWAucK8VXsgGTgDvAdKAf5FtBRxSMxmdZ44EuJ7VekC7QP4H5wOPs42qqe1H2hIg/aKmkspLXCYjCUeCCwDLHUa8D/TxWfhXVd0HaQo4fpMw2jTVFXwccDSx+glp6GAXuAbNidiPgIKhEkb+6iF9PsGJJ+uc2hB6UJV6kwhWUk0HJ60GOhHxvAOkX9JHCC8BLwMOGPhLgjK5OhBFUhgTtyik5OfMpcACYUiDgH+Az4Hvg42DxZ2BY4I6jfR7wJmDvUsjYhoniEsggaHcuWNgKcgDUQA4C14HnERaiHtSisl/bi9fNBFSWgF5pwEady4e0AuE8KidBV0fedSgMgzwEfSvkLDIuc0DNEWOiU+BWgy2BURXaUboEhqL3cfC6AjjvPBxwtKyJLO9F2I2yBfi6Rmc7gC+BXY6JL6Iz1xE6UN4BLqcsFqphOcKPacTZ5hmgO/wN5kSXIRhDAyADoLHTI8YCsAy4mFIdex9q7gJwFlgV7Z0KSu4ROF3TPlNgQddElA4rLHbaec/qugLYh2de2eZpoCcC3uM6pzWWbS6PfWWq/bc7A8X2uz86cw0wXbwrcKkuxw3gswKronY8O6lteQy6qCwu5jpHbyCMR1ngazor/1GF9tBGh1JFZd3EPy0FbHNQoLtA6WbXBL4BxhAOolgkE0iMWhlZj9/kOtShgs1bwBuuRN8W9FoacaYf/9QR6nNIIN9AkrLfBNqHMCUdcRIDVttbEL4rttiogbQL3EyAy5fELOAPkN9BX8mpNwujzfXf90GWgtqN9RPID/7ezd+U5tBz4Vaya3K2wN26HNuE8XfoQjMbk0TF9Vsa6qprWxYLaqoeA5nqHW3kvuwkh1zUG90detyNMR/mL4kK8xUGolNWISbYfmBDoXRLxl4EfgOmhclhH3AVePpsYyTJICDsQzGx2hj0mr+Z0iWUp8wk+R+5HB+Omml+9EkF4sedePnRR9CJ0fv1wLGmU2ahfVpvtd5sHcxEEuBap1fgqetW1v36fNMopaP5lNnAetkPBXW5jOeELPZfgAfVggsBVNureFugo2g07gdhAolTWqCpKsclgDrEdKQtBdbCxyRlTT1txlXtXnCoRQD/AcO1aTk8RcVdAAAAAElFTkSuQmCC" /></a>
+            <a href=""><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA2NJREFUSEudlk2ITmEUx3+nmZDG+NggCzQpIiuLSaQssPSRLFBkRUQaiY0d8lEoS6kpmqahhMzGRsoIpYRsxlcNmoSQyPR4n3ufe+/zce5t8i7e3vfe85yP//9/znmEpo8AJvtyVu638igz8O2Ts34gyUzDA3WJ+MESm/BlY0yvhNLNOA60Ad3APGC2OzgC8lYwQ0YYs+AkOSrI5RWHQGo1LwCOABsEpgXAV1G+ANdAToAZbqTQgVyGFUxIKUwGTgJ7ENrKahph5y9wpiWMY8AfnZWCYz29uQi3MbK4Elc9NEouj4D1wEiBfazJsOL83yLgPjAj1F6dnGsJGwGWA28t8xmiqbjKVpmFYUhgbmHUIPRPBu4BrwV+GWgHNgELvTMvXPBvVQflAgw/Qh+GLboyg8r6BLPbwNfIw74WUheiZxdB9lYaCjjOQtlMX8aZZByHs8NWsRQYU9DYD5wLhkkusnkCH0qoo8p6EbbHvagIx8J53YfO9bbt742Arbr65A5Oteg4rHDMBGAUoTMMrIzJnMNXnusBx20xBsMpkg+QYTBdxRmf49XAXSVTTVudwHf3wib8u6peTbTwUSbsBZYdYC6nUdQWmgL8cLYdXhJJ/Mif7esbRYsW7w4Bp+pax4fIQGNgpVOKGXQAOB8H7gFO54eSbfPGCPPjeZroJz/WD2xO/WQDpKeV9NkosGwH01sbGOanKSU5WpNnwBLND7AVuBoH7gbzoDjgjzdgGKFrHEvCrs2fwMQaypYhPCn8OBtpB2NXW4fSC3Y6ldwY4Tim3DxW1UcdOVNADiZLJafvKxg7+7NWlorN7JfXj1HO4TLPxOXOJqquqfYKsM0XqV/gMsCuM09eal/+j6ot78/DwAXYOQ53QNbpcJW1WEh/OJuGisukBzBO6V4dMTKzALsEpke96+OQVKxcq4rcP7r9nm+xIHC6BVYJDBqYVMNXwrG+RuU7GDuKH5d+aiuuPKwAboFMVWCPKs4CxL5HgTWt689TLXlP1cprYQ5G+sHY60sEtc9xGBi4ibATw+fEawPHlW1uZL9XAruAtcBM9Fn9vnXnHgQuAQ9rJleASpiUU0k0ufz+sqPzHciYg9dOK5uMvdhpza/4DwaICnVEb+OuDZsypKb61ywu5bKjPKpR/Lge/wP4IjAyNpOSkwAAAABJRU5ErkJggg==" /></a>
+            <a href=""><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwZJREFUSEuVl7FrFFEQxn8DFkGwULARLHJiY6mgFipewMrSThAECyVBSJHjBJGIhYSk0EJy/gGCnTY2opJDO8FgZ2GSSi1VMIU2ed7uvts38/a93Gab23s7733zzTczOyuoSwCnFxL3OZuwri38fWJTsWSvXdHbuJanEruU5FgatcaxhultTZsU8HXgMPAOZF1weQn25qHHEpqhhg/AueCNXAP3bIL0zccJqWMRai/A3QSeRqJ/AXciC9xgXLAZR8jfZ5MrbF4cxeB+HddqwzZwwAA3Dspnbzp5m6E+D7ynVMCNf54LXN29zFpnYTg6seUWcEfgiIOXwA1gu/Ilx6wdcKacJmTDhGbS2N3wMVVOOc3apLLdewg4DnwHvhXbc7GIy2ka2LLmsiq4Oa/xArAy9scfehC4MBJiETip9v4Bee0r5WeqQepy8sDGbBWY8ysp4Hngcfk8HbkN4DTwK9syBaadsGXblGUssBJl+F9gaoJad4GH2rkWoUYxlgVwKwnhdgQ2Hfwowi4gkXPrwKls5xKcZ2yCUmlcLZlQ+4MKxkWL/eT/XwTeAPsU0A6wH/in80NrsweN63p5guN2FOpXwOUooYps39C9ST+vgdVBJrkSGl8BXkQgj4D5KNvOAB8t45DX064sJ6OGCrXXWNcBXBqF+m0EfA/hge350gU3HHdAlVwlxw6wGQEPwM36td5Iq2XTPmEGWNMdFeiPMn0pOqcruOE46bLAKtQDoAYWWI4mkxI4YtxHWIqmhy4wTCaXQMd5xjngkrG9GowF+q7BmBxwLtQYxgG4di0wDt5OZhy1sZqxIjUQmPXa9MpQ2+RKhzqhcZlcaq8OXAdhM9JGMZae4Gpg3wJncF5jzbgE1mMQXYGhfqXrgcNqXB2UCXXt7wzIWjlnhXew19jEsyonwzjUwhTC2TD1lFbFu/Wrtz8KHIuS6/OoWfyO1ibYpcfb6Aw9SjTGiqhUM18BiWkgfjtFoNXfEJDcPGGzzfS9+nvMpnEF3IaIN9Qzc/jEs/Nz2j0buf+mSzA0EQ7R8QAAAABJRU5ErkJggg==" /></a>
+            <a href=""><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAsVJREFUSEullz+MDVEUxn8nK5EIodhGNEJ2O9tsJwoNkRWUShFBIiESNGTfylqrsIWNZgtRKFUrEUKiEK1EBBERKoUodFaBHG/mzn1z5/6ZO8MU7827f853v3O+c859IoCWHzhPMOBORt4FQZsmIuZcrOI9+nSB7rKmzf5oLk88DVXPRNYkhvq7MUO19RAlWhEa8x0E2t0cj9//ONpARoEzbqi3VQv7HiMmrnXAIWA38KOyOw5MgKyv5e9Cjd7XgLcCayZTREFfAw9Bfrt7HcYlxBTwANieZ5wSUTXufgmfUQ4D76xdn/ELYE8WNErWhqyKXGjkCXAgBrwN+GKE1tyVwqlXpSLcZA9sBb56qmbfMK5PjbEuUumS066lcv1e4LlFsAc/DtxtcA0OXM4WGtgB7HIzorVk1kaPAvdrYANwAVgKQxMwGyBcRzkhsKjC+Cg0kZh4u08Cd3zGV4fwc7aYpIqGoAOFa9UBtyDMo5wBxjp46xzC7aIrOaqWJdCCdfB4hW0wBLHAtvhMgi67qo0dYlgXLlmvilMaFwS94gk6liOzwIJ3ugngFjCTScXLwI3A1QJzubYsMKs18CZgHuSsoGNhX3ePUVI8Dyz76XRR4GaHS0HBeBE4VbrcFVeAEyTmsWFG3PMYy2lBV5KurnNnFWEnWqVTyrfxQjSjwuMiC5wYcwRYzcSoQ2lpInoZNqXwpna1QZsEPuSAWwkGLIO72AbgpwdcLnqpMG0m8pc3t3KVBd7Lu+Yh5RHoQTPWzONCddPAM2DzPzFPA3+qevx7aze8CAgbUdkv6Hc1l4GiJhddpc/zDeEjKr9AX5mLAH980fcxaD0VtM4gk1Lsq3GjavvDj2trd+zRuCP2Q1fXimlmf9B5ImmTvzFUjmmIazTW8e9MD+Cgr3vAec+2roheXIJQj9zuSytSBFqV5IYmFaaIM/8CL5X7K7XXqasAAAAASUVORK5CYII=" /></a>
+            <a href=""><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwdJREFUSEudlk2IjlEUx38ns9A0ja9CMURpUmKBzfiIEWnKQiQLRcpCIUVZiIXFKCUhk60N46tZSTZqWEhsZMmGkqZmM6nBmLree5/nfZ5773Pu87zceut578e55/zP//zPFewQwLivcKTm812V5dr9/qIg4V8wDYcFE/pYa0BI7bfH0hH78SsOVe6s7E/v8CLOvXN7a00qOfn3qY6gTuVSz0o4m6RPJcAKcRoYBvOAEYEBA33AL4EbBq6CTOc5XpJndKLN4SzH5egG7gLHBWYDouseLgNeA6sUsL8BD4B1CL0YtsQU8Ml1AOEJRsbAHAJmY+5F8T9DGIpLMfLxE7AX6BMYz4Jpl1Np7TRwK/fsLXCk9fucyPEmgXc+dFVOupNfEJZi2A88b0cdl9N2YNyD4DdwGbgN/IzgPAPcDOZyD6OIJ/MAXtRBPRf4AdIVSdk08BS4D3xA+I6RS4K5ogle5OC1ltMXNFEsAswdPgky4tjoRxCenALsb4VWwVFqLiIMW2O+inmsdtuPAeuBDcCgpuGl0YYyK5etzXsaSX2n9wBBLmI4GlS01N/y4gHgjQ51OdtlWQyy0uVYkc/mJhFIv03HAq33xQJiXdjWgnpMYFFRc2pHalQ0a+uhwOEqAbW2mEVvFekcwgmM9JQMD5uHT8AStICRO7Ly9Ia3HLbFbOEUcBDYCPTU5jXN/Pcgm/UXRnZlMbx41gIfgTnxoi7Z6u27QF7WPwRy66VR97UPGAXprhzWijesl+sI5wt+uv0hJ4KHQMnkwvJicLDvRNha9y7zzL4CdgMzGpTtuQTUhZleRzI4C9jvpjEKHBWYSUppQK7M3EKnWEIfRvrB9CMMYlwdKiOAztarlcY7da/FsCZC+C2Th0HW+AISa6wXzR/gUY7KhA9jWwM6YHUQwSAwlL8slgOrgfmtfNsWN4nwFcMY8Bhhqsh9SlN80itQN+WvFvEYxs4iTotArTOVAPUiTzLk/yKtJlRpKuFUlVxKgTdrRCcwRaLhtSmtO0Uq00kXUvY0HPsLFv4bMcEjjqUAAAAASUVORK5CYII=" /></a>
+        </div>
     </div>
 </section>
 
 <footer style="background-color: #333; color: #fff; padding: 20px 15px; text-align: center;">
-    <p style="margin-bottom: 10px; font-size: 1rem; line-height: 1.5;">
-        © Dept. of Computer Science -- Mankar College <br>
-        <small>Developed by Mainak Majumder & Team</small>
-    </p>
-    <nav aria-label="Footer navigation">
-        <a href="#home" 
-           style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;"
-           onmouseover="this.style.textDecoration='underline'" 
-           onmouseout="this.style.textDecoration='none'">
-           About LAHARI 2k24
-        </a>
-        <a href="#faq" 
-           style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;"
-           onmouseover="this.style.textDecoration='underline'" 
-           onmouseout="this.style.textDecoration='none'">
-           FAQ
-        </a>
-        <a href="#" 
-           style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;"
-           onmouseover="this.style.textDecoration='underline'" 
-           onmouseout="this.style.textDecoration='none'">
-           Code of Conduct
-        </a>
-        <a href="#" 
-           style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;"
-           onmouseover="this.style.textDecoration='underline'" 
-           onmouseout="this.style.textDecoration='none'">
-           Community Guidelines
-        </a>
-    </nav>
+    <p style="margin-bottom: 10px;color: #fff;">© Department of Computer Science, Mankar College | All rights reserved.<br><small>Developed by Mainak Majumder & team</small></p>
+    <div>
+        <a href="#home" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">About
+        <a href="#faq" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">FAQ</a>
+        <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Code of
+            Conduct</a>
+        <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Community
+            Guidelines</a>
+        </div>
 </footer>
 
+<!-- jQuery (required for Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Initialize Owl Carousel -->
+<script>
+    const projects = [
+            {
+                title: "Project 1",
+                image: "https://via.placeholder.com/300x200",
+                description: "This is a description of Project 1.",
+                members: [
+                    { name: "Member 1", image: "https://via.placeholder.com/50", contribution: "Frontend Developer", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 2", image: "https://via.placeholder.com/50", contribution: "Backend Developer", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 3", image: "https://via.placeholder.com/50", contribution: "UI/UX Designer", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 4", image: "https://via.placeholder.com/50", contribution: "Project Manager", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 5", image: "https://via.placeholder.com/50", contribution: "QA Tester", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 6", image: "https://via.placeholder.com/50", contribution: "DevOps Engineer", social: { linkedin: "#", github: "#", twitter: "#" } },
+                    { name: "Member 7", image: "https://via.placeholder.com/50", contribution: "Data Scientist", social: { linkedin: "#", github: "#", twitter: "#" } }
+                ]
+            },
+            // Add 5 more project objects here with similar structure
+        ];
+
+        function createProjectElement(project) {
+            const projectElement = document.createElement('div');
+            projectElement.className = 'project';
+            projectElement.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <div class="project-details">
+                    <h2 class="project-title">${project.title}</h2>
+                    <p class="project-description">${project.description}</p>
+                    <div class="team-members">
+                        ${project.members.map(member => `
+                            <div class="team-member" data-name="${member.name}" data-image="${member.image}" data-contribution="${member.contribution}" data-social='${JSON.stringify(member.social)}'>
+                                <img src="${member.image}" alt="${member.name}">
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            return projectElement;
+        }
+
+        const projectsContainer = document.querySelector('.projects');
+        projects.forEach(project => {
+            projectsContainer.appendChild(createProjectElement(project));
+        });
+
+        const popup = document.querySelector('.popup');
+        const popupContent = document.querySelector('.popup-content');
+        const closeBtn = document.querySelector('.close');
+
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.team-member')) {
+                const member = e.target.closest('.team-member');
+                const memberDetails = member.dataset;
+                const socialLinks = JSON.parse(memberDetails.social);
+
+                popupContent.querySelector('.member-details').innerHTML = `
+                    <img src="${memberDetails.image}" alt="${memberDetails.name}">
+                    <h2>${memberDetails.name}</h2>
+                    <p>${memberDetails.contribution}</p>
+                    <div class="social-links">
+                        <a href="${socialLinks.linkedin}" target="_blank">LinkedIn</a>
+                        <a href="${socialLinks.github}" target="_blank">GitHub</a>
+                        <a href="${socialLinks.twitter}" target="_blank">Twitter</a>
+                    </div>
+                `;
+                popup.style.display = 'flex';
+            }
+        });
+
+        closeBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(e) {
+            if (e.target == popup) {
+                popup.style.display = 'none';
+            }
+        });
+</script>
 
     <script src="script.js"></script>
 </body>
