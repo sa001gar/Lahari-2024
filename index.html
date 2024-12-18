@@ -18,8 +18,8 @@
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#venue">Venue</a>
-            <a href="#">Projects</a>
-            <a href="#">Teams</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="#">Teams</a> -->
             <a href="#faq">FAQ</a>
         </div>
 
@@ -31,7 +31,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="container">
+    <section class="container" id="hero">
         <div class="left-section">
             <h1 class="gradient-text">Welcome to<br>
                 <span style="font-family: 'KalpanaUnicode', sans-serif; font-size: 40px; line-height: 1.7;">
@@ -52,7 +52,13 @@
             <a href="pdf/final copy.pdf" class="register-btn " style=" background: linear-gradient(to right, #8d0486, #e95783);color: white;"><i class="fa-solid fa-download"></i>&nbsp;&nbsp;Annual Magazine</a>
         </div>
         <div class="right-section">
-            <img src="images/image2.jpg" alt="">
+            <div class="image-container">
+                <img src="images/image1.jpeg" alt="Image 1" class="image image1">
+                <img src="images/image2.jpg" alt="Image 2" class="image image2">
+                <img src="images/image3.jpg" alt="Image 1" class="image image3">
+                <img src="images/image4.jpg" alt="Image 2" class="image image4">
+            
+              </div>
         </div>
     </section>
 
@@ -61,7 +67,7 @@
     position: relative;
     text-align: center;
     margin-top: 20px;
-">
+" id="home">
         <h1 style="font-size: 36px; margin: 0;">
             <span style="color: #28a745; font-size: 30px;">“</span>
             <span style="font-family: 'KalpanaUnicode', sans-serif;font-size:48px ;">লহরী ২০২৪</span>
@@ -96,7 +102,13 @@
     </div>
 
 <!-- Project Section  -->
-    <div class="container">
+<h2 style="font-size: 28px; margin-bottom: 2px; text-align: center;">
+    <span style="color: #48a05c;"><</span>
+    <span style="color: #000; font-weight: bold;">Projects</span>
+    <span style="color: #48a05c;">/></span>
+</h2>
+    <div class="container" id="projects">
+        
         <div class="projects">
             <!-- Projects will be dynamically inserted here -->
         </div>
@@ -190,7 +202,7 @@
 
     
     <!-- What to Expect Section  -->
-    <section style="padding: 30px 15px; max-width: 1100px; margin: 5px 10px;">
+    <section id="expect" style="padding: 30px 15px;  margin: 5px 10px;">
         <h1 style="font-size: 2rem; margin-bottom: 10px; text-align: center;">What to Expect</h1>
         <p style="font-size: 1rem; color: #666; margin-bottom: 20px; text-align: center;">
             An annual event hosted by the Google Developers Group across the world to bring technology closer to
@@ -231,8 +243,8 @@
 
 
     <!-- Footer  -->
-    <section
-    style="background-color: #fff; border: 2px solid #333; border-radius: 20px; margin: 40px 5px; padding: 20px; max-width: 900px; display: flex; justify-content: space-between; align-items: center;">
+    <section id="keep"
+    style="background-color: #fff; border: 2px solid #333; border-radius: 20px; margin: 40px 5px; padding: 20px;  display: flex; justify-content: space-between; align-items: center;">
     <div style="max-width: 600px;">
         <h2 style="font-size: 1.8rem; margin-bottom: 10px; color: #000;">Keep in touch for latest announcements!
         </h2>
@@ -254,7 +266,7 @@
 </section>
 
 <footer style="background-color: #333; color: #fff; padding: 20px 15px; text-align: center;">
-    <p style="margin-bottom: 10px;color: #ffffff;font-size: medium;">© Department of Computer Science, Mankar College<br><small style="color:#d3f3ff;">Developed by Mainak Majumder & team</small></p>
+    <p style="margin-bottom: 10px;color: #ffffff;font-size: 14px;">© Department of Computer Science, Mankar College<br><small style="color:#d3f3ff;">Developed by Mainak Majumder & team</small></p>
     <!-- <div>
         <a href="#home" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">About
         <a href="#faq" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 0.9rem;">FAQ</a>

@@ -125,9 +125,9 @@ document.addEventListener('click', function(e) {
             <h2>${memberDetails.name}</h2>
             <p>${memberDetails.contribution}</p>
             <div class="social-links">
-                <a href="${socialLinks.linkedin}" target="_blank">LinkedIn</a>
-                <a href="${socialLinks.github}" target="_blank">GitHub</a>
-                <a href="${socialLinks.twitter}" target="_blank">Twitter</a>
+                <a href="${socialLinks.linkedin}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="${socialLinks.github}" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="${socialLinks.twitter}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             </div>
         `;
         popup.style.display = 'flex';
