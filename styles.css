@@ -129,11 +129,14 @@ body {
 }
 .right-section {
     flex: 1;
-    background-image: url('images/welcome.jpeg');
-    width:100%;
-    padding: 20px;
     border-radius: 10px;
 }
+
+.right-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 h1 {
     font-size: 48px;
     font-weight: bold;
@@ -421,6 +424,7 @@ p {
 }
 .project {
     background-color: #fff;
+    border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
