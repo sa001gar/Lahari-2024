@@ -4,13 +4,13 @@ const projects = [
         image: "images/project_images/project_4.jpeg",
         description: "An IoT-based project to enhance urban living through smart infrastructure and data analytics.",
         members: [
-            { name: "Sagar Kundu", image: "images/profile_image/sagar.png", contribution: "Project Manager", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Bob Smith", image: "https://via.placeholder.com/50?text=BS", contribution: "IoT Specialist", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Carol Davis", image: "https://via.placeholder.com/50?text=CD", contribution: "Data Scientist", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "David Wilson", image: "https://via.placeholder.com/50?text=DW", contribution: "Frontend Developer", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Eva Brown", image: "https://via.placeholder.com/50?text=EB", contribution: "Backend Developer", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Frank Miller", image: "https://via.placeholder.com/50?text=FM", contribution: "UI/UX Designer", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Grace Lee", image: "https://via.placeholder.com/50?text=GL", contribution: "Quality Assurance", social: { linkedin: "#", github: "#", twitter: "#" } }
+            { name: "Sagar Kundu", image: "images/profile_image/sagar.png", contribution: "Project Manager", social: { linkedin: "", github: "#", twitter: "#" } },
+            { name: "Koyel Das", image: "images/profile_image/koyel_das.jpeg", contribution: "Team Member", social: { linkedin: "", github: "#", twitter: "#" } },
+            { name: "Sagar Kundu", image: "images/profile_image/sagar.png", contribution: "Project Manager", social: { linkedin: "", github: "#", twitter: "#" } },
+            { name: "Sagar Kundu", image: "images/profile_image/sagar.png", contribution: "Project Manager", social: { linkedin: "", github: "#", twitter: "#" } },
+            { name: "Sagar Kundu", image: "images/profile_image/sagar.png", contribution: "Project Manager", social: { linkedin: "", github: "#", twitter: "#" } },
+            { name: "Sagar Kundu", image: "images/profile_image/sagar.png", contribution: "Project Manager", social: { linkedin: "", github: "#", twitter: "#" } },
+            
         ]
     },
     {
