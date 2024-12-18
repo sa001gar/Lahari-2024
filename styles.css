@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+/* Font import  */
+@font-face {
+    font-family: 'KalpanaUnicode'; /* Give your font a name */
+    src: url('fonts/Kalpana\ UNICODE.ttf') format('truetype'); /* Path to the TTF file */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -36,12 +44,12 @@ body {
 }
 
 .logo span {
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: normal;
     color: #555;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 2px 8px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 15px; */
+    padding: 2px 2px;
     margin-left: 5px;
 }
 
@@ -94,7 +102,7 @@ body {
     .nav-links {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 90px;
         gap: 0;
         flex-direction: column;
         background-color: #f1f1f1;
@@ -415,13 +423,34 @@ p {
     }
 }
 
+/* @media (min-width: 784px) {
+    .projects {
+        grid-template-columns: 3fr minmax(300px, 1fr) !important;
+    }
+}
+ */
+
 
 /* project Section  */
+/* Projects Section */
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
     gap: 20px;
 }
+
+@media (max-width: 1024px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+}
+
 .project {
     background-color: #fff;
     border: 1px solid black;
@@ -499,4 +528,41 @@ p {
     margin: 0 5px;
     color: #333;
     text-decoration: none;
+}
+
+
+
+#faq{
+    text-align: justify!important;
+}
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    #venue iframe {
+        width: 200px;
+        height: 150px;
+        bottom: 5px; /* Adjust the distance from the bottom */
+        left: 5px; /* Adjust the distance from the left */
+    }
+}
+
+/* For even smaller screens (e.g., mobile portrait) */
+@media (max-width: 480px) {
+    #venue iframe {
+        width: 150px;
+        height: 100px;
+        bottom: 5px;
+        left: 5px;
+    }
+}
+
+
+/* Gradient Text  */
+.gradient-text {
+    background: linear-gradient(to right, #8d0486, #e95783); /* Gradient colors */
+    -webkit-background-clip: text;  /* Clip the background to text */
+    -moz-background-clip: text;     /* For Firefox */
+    color: transparent;             /* Make the text color transparent to show the gradient */
+    font-weight: bold;              /* Optional: make the text bold */
 }
