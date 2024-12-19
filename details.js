@@ -42,7 +42,7 @@ const projects = [
     },
     {
         title: "Pollution mitigation",
-        image: "images/profile_image/pollution.webp",
+        image: "images/project_images/pollution_img.jpeg",
         description: "A Pollution Mitigation Project aims to reduce environmental contaminants through various strategies and technologies. It focuses on minimizing air, water, and soil pollution by implementing sustainable practices. The project involve  renewable energy sources and promoting eco-friendly behaviors. It also emphasizes public awareness and education on pollution's impacts. Ultimately, the aim is to create cleaner, healthier environments and mitigate the effects of pollution for future generations.",
         members: [
             { name: "Swarnamoyee Sikder", image: "images/profile_image/swarnamoyee_sikder.jpeg", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/swarnamoyee-sikder-495574333", github: "#", twitter: "mailto:swarnaskdr02@gmail.com" } },
