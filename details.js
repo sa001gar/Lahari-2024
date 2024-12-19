@@ -6,7 +6,7 @@ const projects = [
         members: [
             { name: "Sagar Kundu", image: "images/profile_image/sagar_kundu.jpeg", contribution: "Project Manager", social: { linkedin: "https://www.linkedin.com/in/sagarkundu/", github: "https://github.com/sa001gar", twitter: "#" } },
             { name: "Koyel Das", image: "images/profile_image/koyel_das.jpeg", contribution: "Team Member", social: { linkedin: "", github: "https://github.com/koyel001", twitter: "#" } },
-            { name: "Akash Karmakar", image: "https://via.placeholder.com/50?text=AK", contribution: "Team Lead", social: { linkedin: "", github: "#", twitter: "#" } },
+            { name: "Akash Karmakar", image: "https://via.placeholder.com/50?text=AK", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/akash-karmakar-912a48315", github: "https://github.com/akashkarmakar22", twitter: "akashkarmakar2323@gmail.com" } },
             { name: "Akash Paramanik", image: "images/profile_image/akash_paramanik.jpeg", contribution: "Team Member", social: { linkedin: "https://www.linkedin.com/in/akash-paramanik-b28307316/", github: "https://github.com/Akash2004Paramanik", twitter: "mailto:paramanikakash04@gmail.com" } },
             { name: "Debarghya Dutta", image: "https://via.placeholder.com/50?text=DD", contribution: "Team Member", social: { linkedin: "", github: "#", twitter: "#" } },
             { name: "Souradeep Dhara", image: "https://via.placeholder.com/50?text=SD", contribution: "Team Member", social: { linkedin: "", github: "#", twitter: "#" } },
@@ -23,7 +23,7 @@ const projects = [
             { name: "Suchana Mondal", image: "images/profile_image/suchana_mondal.jpeg", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } },
             { name: "Rajdip Mondal", image: "images/profile_image/rajdip_mondal.jpeg", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "mailto:mondalrajdip777@gmail.com" } },
             { name: "Ratul Chatterjee", image: "https://via.placeholder.com/50?text=RC", contribution: "Project Manager", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Ankita Mondal", image: "https://via.placeholder.com/50?text=AM", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } },
+            { name: "Ankita Mondal", image: "images/profile_image/ankita_mondal.jpeg", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "mailto:missmondal10@gmail.com" } },
         ]
     },
     {
@@ -34,7 +34,7 @@ const projects = [
             { name: "Irsha Sarkar ", image: "https://via.placeholder.com/50?text= IS", contribution: "Team Lead", social: { linkedin: "#", github: "#", twitter: "mailto:Irshasarkar2004@gmail.com" } },
             { name: "Aparajita Kalsi", image: "https://via.placeholder.com/50?text=AK", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } },
             { name: "Aparajita Mukherjee ", image: "https://via.placeholder.com/50?text=AM", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Sruti Mallick", image: "https://via.placeholder.com/50?text=SM", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } },
+            { name: "Sruti Mallick", image: "images/profile_image/sruti_mallick.jpeg", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } },
             { name: "Isha Das", image: "https://via.placeholder.com/50?text= ID", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } },
             { name: "Rajita Chakraborty ", image: "https://via.placeholder.com/50?text=RC", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } },
             { name: "Sangeeta Banerjee ", image: "https://via.placeholder.com/50?text=SB", contribution: "Team Member", social: { linkedin: "#", github: "#", twitter: "#" } }
@@ -42,7 +42,7 @@ const projects = [
     },
     {
         title: "Pollution mitigation",
-        image: "https://via.placeholder.com/300x200?text=Pollution mitigation",
+        image: "images/profile_image/pollution.webp",
         description: "A Pollution Mitigation Project aims to reduce environmental contaminants through various strategies and technologies. It focuses on minimizing air, water, and soil pollution by implementing sustainable practices. The project involve  renewable energy sources and promoting eco-friendly behaviors. It also emphasizes public awareness and education on pollution's impacts. Ultimately, the aim is to create cleaner, healthier environments and mitigate the effects of pollution for future generations.",
         members: [
             { name: "Swarnamoyee Sikder", image: "images/profile_image/swarnamoyee_sikder.jpeg", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/swarnamoyee-sikder-495574333", github: "#", twitter: "mailto:swarnaskdr02@gmail.com" } },
@@ -52,7 +52,7 @@ const projects = [
     },
     {
         title: "DriveSafe : Your personal safety companion",
-        image: "https://via.placeholder.com/300x200?text=FinTech+Revolution",
+        image: "images/profile_image/drive_safe.jpeg",
         description: "This app defines a safety app that uses the device's accelerometer to detect shakes and trigger emergency actions. It allows users to manage emergency contacts, set shake sensitivity, and send location-based alerts through email. The app features a countdown timer for emergency situations, speech feedback, along with options to cancel or adjust the emergency settings. The UI includes a modal for adding/removing contacts and a slider to adjust shake sensitivity.",
         members: [
             { name: "Debjit Goswami", image: "images/profile_image/debjit_goswami.jpeg", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/debjit-goswami-88303930a/", github: "https://github.com/debjitgoswami", twitter: "mailto:debjitg421@gmail.com" } },
@@ -63,17 +63,30 @@ const projects = [
         ]
     },
     {
-        title: "AgroTech",
-        image: "https://via.placeholder.com/300x200?text=AgroTech",
-        description: "An AI-powered system for optimizing crop yield and resource management in agriculture.",
+        title: "Anti sleep alarm system",
+        image: "images/profile_image/anti.webp",
+        description: "Sleep-related accidents, particularly those caused by drowsy driving or fatigue in workplaces, have become a growing concern worldwide. The Anti-Sleep Alarm System is an innovative technology designed to address this critical issue by preventing incidents caused by sleep-induced lapses in attention.This system functions as a proactive safety device, typically worn or installed in vehicles, to monitor the user\'s alertness. By detecting signs of drowsiness or inattention, it alerts the individual through auditory, visual, or vibratory signals, helping them regain focus and avoid potential accidents.",
         members: [
-            { name: "John Davis", image: "https://via.placeholder.com/50?text=JD", contribution: "Agricultural Scientist", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Kelly Brown", image: "https://via.placeholder.com/50?text=KB", contribution: "Machine Learning Engineer", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Liam O'Connor", image: "https://via.placeholder.com/50?text=LO", contribution: "IoT Specialist", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Maria Rodriguez", image: "https://via.placeholder.com/50?text=MR", contribution: "Frontend Developer", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Nate Wilson", image: "https://via.placeholder.com/50?text=NW", contribution: "Backend Developer", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Olivia Chang", image: "https://via.placeholder.com/50?text=OC", contribution: "UI/UX Designer", social: { linkedin: "#", github: "#", twitter: "#" } },
-            { name: "Peter Smith", image: "https://via.placeholder.com/50?text=PS", contribution: "Project Manager", social: { linkedin: "#", github: "#", twitter: "#" } }
+            { name: "Anirban Chakraborty", image: "https://via.placeholder.com/50?text=JD", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/anirban-chakraborty-442291310", github: "#", twitter: "#" } },
+            
+        ]
+    },
+    {
+        title: "Revival of Energy",
+        image: "images/profile_image/revival.webp",
+        description: "Sleep-related accidents, particularly those caused by drowsy driving or fatigue in workplaces, have become a growing concern worldwide. The Anti-Sleep Alarm System is an innovative technology designed to address this critical issue by preventing incidents caused by sleep-induced lapses in attention.This system functions as a proactive safety device, typically worn or installed in vehicles, to monitor the user\'s alertness. By detecting signs of drowsiness or inattention, it alerts the individual through auditory, visual, or vibratory signals, helping them regain focus and avoid potential accidents.",
+        members: [
+            { name: "Narayan Mondal", image: "images/profile_image/narayan.jpeg", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/anirban-chakraborty-442291310", github: "#", twitter: "#" } },
+            
+        ]
+    },
+    {
+        title: "Anti sleep alarm system",
+        image: "https://via.placeholder.com/300x200?text=AgroTech",
+        description: "Sleep-related accidents, particularly those caused by drowsy driving or fatigue in workplaces, have become a growing concern worldwide. The Anti-Sleep Alarm System is an innovative technology designed to address this critical issue by preventing incidents caused by sleep-induced lapses in attention.This system functions as a proactive safety device, typically worn or installed in vehicles, to monitor the user\'s alertness. By detecting signs of drowsiness or inattention, it alerts the individual through auditory, visual, or vibratory signals, helping them regain focus and avoid potential accidents.",
+        members: [
+            { name: "Anirban Chakraborty", image: "https://via.placeholder.com/50?text=JD", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/anirban-chakraborty-442291310", github: "#", twitter: "#" } },
+            
         ]
     }
 ];
