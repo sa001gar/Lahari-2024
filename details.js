@@ -15,7 +15,7 @@ const projects = [
     },
     {
         title: "Fire Fighter",
-        image: "https://via.placeholder.com/300x200?text=Fire Fighter",
+        image: "images/project_images/fire.jpeg",
         description: "The Firefighter Robot using Arduino Uno is an autonomous robotic system designed to detect and extinguish fires. It uses flame sensors for fire detection, ultrasonic sensors for navigation, and a water pump or fan for extinguishing flames. Controlled by Arduino, the robot operates independently in hazardous areas, ensuring safety. This project highlights the integration of robotics and automation in fire safety management",
         members: [
             { name: "Chaiti Laha", image: "images/profile_image/chaiti_laha.jpeg", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/chaiti-laha-473abb315", github: ":https://github.com/chaiti7029", twitter: "mailto:chaitilaha5@gmail.com" } },
@@ -81,11 +81,11 @@ const projects = [
         ]
     },
     {
-        title: "Anti sleep alarm system",
-        image: "https://via.placeholder.com/300x200?text=AgroTech",
-        description: "Sleep-related accidents, particularly those caused by drowsy driving or fatigue in workplaces, have become a growing concern worldwide. The Anti-Sleep Alarm System is an innovative technology designed to address this critical issue by preventing incidents caused by sleep-induced lapses in attention.This system functions as a proactive safety device, typically worn or installed in vehicles, to monitor the user\'s alertness. By detecting signs of drowsiness or inattention, it alerts the individual through auditory, visual, or vibratory signals, helping them regain focus and avoid potential accidents.",
+        title: "FollowUP : a line mangement web app",
+        image: "images/project_images/line.png",
+        description: "Streamline your waiting experience with our line management app! Users can easily register for queues, track their position in real-time, and view estimated wait times. Organizations can efficiently create and manage queues, schedules, and capacity. Enjoy a hassle-free, organized system that saves time and enhances convenience!",
         members: [
-            { name: "Anirban Chakraborty", image: "https://via.placeholder.com/50?text=JD", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/anirban-chakraborty-442291310", github: "#", twitter: "#" } },
+            { name: "Narayan Mondal", image: "https://via.placeholder.com/50?text=NM", contribution: "Team Lead", social: { linkedin: "https://www.linkedin.com/in/anirban-chakraborty-442291310", github: "#", twitter: "#" } },
             
         ]
     }
