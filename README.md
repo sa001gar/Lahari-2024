@@ -56,7 +56,7 @@ lahari-2024/
 
 | Desktop View | Mobile View |
 |--------------|-------------|
-| [Desktop Screenshot] | [Mobile Screenshot] |
+| [[Desktop Screenshot](https://github.com/sa001gar/Events-Page-MCCS/blob/main/images/desktop_view.png)] | [Mobile Screenshot] |
 
 ## 🌐 Live Demo
 
