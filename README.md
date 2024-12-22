@@ -43,12 +43,12 @@ lahari-2024/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sa001gar/Events-Page-MCCS.git
+   git clone https://github.com/sa001gar/Lahari-2024.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd lahari-2024
+   cd Lahari-2024
    ```
 
 3. Open `index.html` in your browser to view the website.
