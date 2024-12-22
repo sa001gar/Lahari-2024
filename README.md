@@ -6,6 +6,7 @@
 
 ## 🌟 Features
 
+
 - **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices.
 - **Hero Section**: A captivating introduction to the event, complete with key highlights and call-to-action buttons.
 - **Event Details**: A dedicated section to showcase event highlights, schedules, and activities.
@@ -56,7 +57,7 @@ lahari-2024/
 
 | Desktop View | Mobile View |
 |--------------|-------------|
-| [[Desktop Screenshot](https://github.com/sa001gar/Events-Page-MCCS/blob/main/images/desktop_view.png)] | [Mobile Screenshot] |
+| ![image](https://github.com/user-attachments/assets/c4b7f816-3a6c-40ec-bc2e-910649a380be) | [Mobile Screenshot] |
 
 ## 🌐 Live Demo
 
@@ -72,7 +73,7 @@ This project was made possible thanks to the contributions of:
 
 ## 📜 License
 
-This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.
+This project is departmental project of Depatment of Computer Science, mankar Collge. Take permission to make any copy of it.
 
 ## 📝 Feedback & Contributions
 
